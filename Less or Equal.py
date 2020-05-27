@@ -1,0 +1,16 @@
+n,k=map(int,input().split())
+lst=list(map(int,input().split()))
+lst.sort()
+if(n==k):
+    if(lst[n-1]==10**9)
+    print(lst[n-1]+1)
+elif(k==0):
+    if(lst[0]==1):
+        print(-1)
+    else:
+        print(1)
+else:
+    if(lst[k-1]==lst[k]):
+        print(-1)
+    else:
+        print(lst[k-1]+1)

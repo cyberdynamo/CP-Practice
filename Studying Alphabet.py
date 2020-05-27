@@ -1,0 +1,9 @@
+s=set(input())
+n=int(input())
+while(n):
+    string=set(input())
+    if(len(s.union(string))==len(s)):
+        print("Yes")
+    else:
+        print("No")
+    n-=1

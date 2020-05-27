@@ -1,0 +1,11 @@
+a=int(input())
+b=int(input())
+if(a*b>(2*a+2*b)):
+    print("Area")
+    print(a*b)
+elif(a*b<(2*a+2*b)):
+    print("Peri")
+    print(2*a+2*b)
+else:
+    print("Eq")
+    print(a*b)

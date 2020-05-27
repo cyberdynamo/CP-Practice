@@ -1,0 +1,1 @@
+from stalinsort import sort

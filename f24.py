@@ -1,0 +1,9 @@
+n,k=map(int,input().split())
+while(k!=0):
+    d=n%10
+    if(d!=0):
+        n=n-1
+    else:
+        n=n//10
+    k-=1
+print(n)

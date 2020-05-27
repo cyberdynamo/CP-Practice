@@ -1,0 +1,15 @@
+n,loc=map(int,input().split())
+if(n%2==0):
+    mid=n//2+1
+else:
+    mid=n//2+2
+if(loc<mid):
+    start=1
+    incr=(loc-1)*2
+    start+=incr
+    print(start)
+else:
+    start=2
+    incr=(loc-mid)*2
+    start+=incr
+    print(start)

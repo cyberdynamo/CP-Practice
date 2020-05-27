@@ -1,0 +1,9 @@
+n,m=map(int,input().split())
+a=max(n,m)
+b=min(n,m)
+count=0
+count=a*(b//2)
+temp=b%2
+if(temp==1):
+    count+=(a//2)
+print(count)
