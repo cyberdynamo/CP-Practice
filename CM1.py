@@ -1,0 +1,32 @@
+
+n=int(input())
+a=list(input())
+b=list(input())
+if(n==0):
+    print(0)
+else:
+    if(len(a)==1):
+        if(a==b):
+            print(0,end="")
+        else:
+            print(1,end="")
+    else:
+        i=0;j=0
+        count=0
+        c2=0
+        while(i<=len(a)-1):
+            if(a[i]==b[i]):
+                count+=1
+                i+=1
+                j+=1
+                c2=0
+                a.pop(0)
+                b.pop(0)
+                
+            else:
+                temp=b.pop(0)
+                b.append(temp)
+                c2+=1
+            if(c2==len(a)):
+                break
+        print(len(a)-count)

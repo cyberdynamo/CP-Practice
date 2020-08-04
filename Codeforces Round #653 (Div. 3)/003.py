@@ -1,0 +1,19 @@
+for t in range(int(input())):
+    n=int(input())
+    count=0
+    flag=0
+    while(n!=1):
+        if(n%6==0):
+            n=n//6
+            #print(n,count)
+            count+=1
+        else:
+            n*=2
+            count+=1
+            if(n>10**9):
+                print(-1)
+                flag=1
+                break
+            #print(n,count)
+    if(flag==0):
+        print(count)

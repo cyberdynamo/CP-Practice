@@ -1,0 +1,19 @@
+sum1=0
+sum2=0
+for t in range(int(input())):
+    s,n,k,r=map(int,input().split())
+    if(r==1):
+        sumx=n*k
+    else:
+        sumx=(k*(r**n-1))//(r-1)
+    x=s-sumx
+    if(x>0):
+        print("POSSIBLE",x)
+        sum1+=x
+    else:
+        print("IMPOSSIBLE",abs(x))
+        sum2+=abs(x)
+if(sum1>=sum2):
+    print("POSSIBLE")
+else:
+    print("IMPOSSIBLE")
